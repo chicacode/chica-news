@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState, useEffect } from 'react'
+import Header from './components/Header';
+import Form from './components/Form';
+import NewList from './components/NewList';
 
 function App() {
+
+  const [category, saveCategory] = useState('');
+  const [news, saveNews] = useState([]);
+  useEffect(() => {
+    const askApi = async () => {
+      const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=16c7059d81da4ff4a5c1d1e2b010b095`;
+
+      const response = await fetch(url);
+      const news = await response.json();
+
+      saveNews(news.articles);
+    }
+    askApi();
+  }, [category])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header title='Breaking news' />
+      <div className="container purple lighten-5">
+
+        <Form
+          saveCategory={saveCategory}
+        />
+        <NewList news={news}/>
+      </div>
+    </Fragment>
   );
 }
 
