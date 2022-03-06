@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/chica-news/static/css/main.8e488f56.chunk.css",
+    "main.js": "/chica-news/static/js/main.63cab2c2.chunk.js",
+    "main.js.map": "/chica-news/static/js/main.63cab2c2.chunk.js.map",
+    "runtime-main.js": "/chica-news/static/js/runtime-main.1c6375d2.js",
+    "runtime-main.js.map": "/chica-news/static/js/runtime-main.1c6375d2.js.map",
+    "static/js/2.bb9c9e62.chunk.js": "/chica-news/static/js/2.bb9c9e62.chunk.js",
+    "static/js/2.bb9c9e62.chunk.js.map": "/chica-news/static/js/2.bb9c9e62.chunk.js.map",
+    "static/js/3.985610e8.chunk.js": "/chica-news/static/js/3.985610e8.chunk.js",
+    "static/js/3.985610e8.chunk.js.map": "/chica-news/static/js/3.985610e8.chunk.js.map",
+    "index.html": "/chica-news/index.html",
+    "static/css/main.8e488f56.chunk.css.map": "/chica-news/static/css/main.8e488f56.chunk.css.map",
+    "static/js/2.bb9c9e62.chunk.js.LICENSE.txt": "/chica-news/static/js/2.bb9c9e62.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c6375d2.js",
+    "static/js/2.bb9c9e62.chunk.js",
+    "static/css/main.8e488f56.chunk.css",
+    "static/js/main.63cab2c2.chunk.js"
+  ]
+}
