@@ -21,7 +21,7 @@ function App() {
   return (
     <Fragment>
       <Header title='Breaking news' />
-      <div className="container purple lighten-5">
+      <div className="container mx-auto">
 
         <Form
           saveCategory={saveCategory}

@@ -23,14 +23,15 @@ import useSelect from '../hooks/useSelect';
     }
     return(
         <div className={`${styles.search}  row`}>
-            <div className="col s12 m8 offset-m2">
+            <div className="flex justify-center items-center">
                 <form onSubmit={searchCategory}>
-                    <h2 className={styles.heading}>Search news by category</h2>
+                    <h2 className={styles.heading}>Discover</h2>
+                    <p className='text-slate-500 flex justify-center items-center text-center'>News from all over the world</p>
                     <SelectNews />
-                    <div className="input-field col s12">
+                    <div className="w-32 bg-slate-200 hover:bg-slate-300 text-white font-bold py-2 px-1 rounded-full">
                         <input 
                             type="submit"
-                            className={`${styles['btn-block']} btn-large purple accent-4`}
+                            className={`${styles['btn-block']} `}
                             value="search"
                         />
                     </div>
